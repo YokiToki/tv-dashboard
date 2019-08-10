@@ -1,4 +1,3 @@
-import {Container as UIContainer} from '@material-ui/core';
 import React from "react";
 import Form from "../Form";
 import Apps from "../Apps";
@@ -18,10 +17,13 @@ class Container extends React.Component {
   }
 
   render() {
-    return (<UIContainer maxWidth="lg">
-      <Form handleOpenURL={this.handleOpenURL}/>
-      <Apps handleOpenURL={this.handleOpenURL}/>
-    </UIContainer>);
+    return (<main>
+      <div className="container">
+        <Form handleOpenURL={this.handleOpenURL}/>
+        <hr/>
+        <Apps handleOpenURL={this.handleOpenURL}/>
+      </div>
+    </main>);
   }
 }
 

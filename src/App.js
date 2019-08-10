@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from './components/Container';
+import {withNavigation} from 'react-tv-navigation'
 
 function App() {
   return (
@@ -7,4 +8,6 @@ function App() {
   );
 }
 
-export default App;
+const NavigableApp = withNavigation(App);
+
+export default NavigableApp;
