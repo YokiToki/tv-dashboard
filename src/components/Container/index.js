@@ -19,9 +19,9 @@ class Container extends React.Component {
   render() {
     return (<main>
       <div className="container">
-        <Form handleOpenURL={this.handleOpenURL}/>
-        <hr/>
         <Apps handleOpenURL={this.handleOpenURL}/>
+        <hr/>
+        <Form handleOpenURL={this.handleOpenURL}/>
       </div>
     </main>);
   }
