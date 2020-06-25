@@ -6,7 +6,7 @@ import {withFocusable} from 'react-tv-navigation'
 const FTextField = ({setFocus}) => {
   return (
     <TextField
-      inputProps={{'contenteditable': true}}
+      inputProps={{'contentEditable': true}}
       label="URL"
       style={{margin: 8}}
       placeholder="http://"
